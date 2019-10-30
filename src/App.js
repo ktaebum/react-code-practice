@@ -8,6 +8,9 @@ function App() {
         <div className="node-environment">
           {process.env.NODE_ENV}
         </div>
+        <div className="custom-environment">
+          {process.env.REACT_APP_HELLO}
+        </div>
       </header>
     </div>
   );
