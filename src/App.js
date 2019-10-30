@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import TestComponent from './components/TestComponent';
+
 function App() {
   return (
     <div className="App">
@@ -10,6 +12,9 @@ function App() {
         </div>
         <div className="custom-environment">
           {process.env.REACT_APP_HELLO}
+        </div>
+        <div className="test-component">
+          <TestComponent />
         </div>
       </header>
     </div>
