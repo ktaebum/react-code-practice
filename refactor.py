@@ -14,7 +14,7 @@ He is a silent guardian, a watchful protector... a dark knight.
         tmp = tmp[:tmp.find(word)] + "*" * len(word) + tmp[tmp.find(word) + len(word):]
     text = tmp
 
-    if text.count("*") > 5:
+    if count_asterisk_exceed_five(text):
         print("More than five asterix")
 
     # censor the word2 from the text
@@ -23,7 +23,7 @@ He is a silent guardian, a watchful protector... a dark knight.
         tmp2 = tmp2[:tmp2.find(word2)] + "*" * len(word2) + tmp2[tmp2.find(word2) + len(word2):]
     text = tmp2
 
-    if text.count("*") > 5:
+    if count_asterisk_exceed_five(text):
         print("More than five asterix")
 
     print(text)
