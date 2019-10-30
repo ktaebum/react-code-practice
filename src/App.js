@@ -3,6 +3,8 @@ import './App.css';
 
 import TestComponent from './components/TestComponent';
 
+import { ThemeProvider } from './contexts/theme';
+
 function App() {
   return (
     <div className="App">
@@ -14,7 +16,9 @@ function App() {
           {process.env.REACT_APP_HELLO}
         </div>
         <div className="test-component">
-          <TestComponent />
+          <ThemeProvider>
+            <TestComponent />
+          </ThemeProvider>
         </div>
       </header>
     </div>
